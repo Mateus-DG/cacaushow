@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cacau Show</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header" id="header">
+        <nav>
+            <img src="./logo cacau.png" alt="" class="logo">
+            <ul>
+                <li><a href="#" id="gourmet">Caixa Gourmet</a></li>
+                <li><a href="#" id="angels">Angel Sortidos</a></li>
+                <li><a href="#" id="pistache">La Nut Pistache</a></li>
+                <li><a href="#" id="gourmetdark">Caixa Gourmet Dark</a></li>
+            </ul>
+            <a href="#" class="btn">Compre já</a>
+        </nav>
+        <div class="info">
+            <div>
+                <h2 id="peso">485g</h2>
+                <p>Peso</p>
+            </div>
+            <div>
+                <h2 id="preco">R$129,99</h2>
+                <p>Preço</p>
+            </div>
+            <div class="line"></div>
+            <div>
+                <h2 id="modelo">Caixa de bombom gourmet</h2>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let header = document.getElementById('header')
+    let gt = document.getElementById('gourmet')
+    let al = document.getElementById('angels')
+    let pis = document.getElementById('pistache')
+    let gtd = document.getElementById('gourmetdark')
+    let modelo = document.getElementById('modelo')
+    let peso = document.getElementById('peso')
+    let preco = document.getElementById('preco')
+
+    gt.onclick = function(){
+        header.style.backgroundImage = "url(./fundochocalte.jpg)"
+        modelo.innerHTML = "Caixa Gourmet"
+        peso.innerHTML = "485g"
+        preco.innerHTML = "R$129,99"
+    }
+    al.onclick = function(){
+        header.style.backgroundImage = "url(./fundoamor.png)"
+        modelo.innerHTML = "Angels Sortidos"
+        peso.innerHTML = "300g"
+        preco.innerHTML = "R$99,99"
+    }
+    pis.onclick = function(){
+        header.style.backgroundImage = "url(./pistachefundo.jpg)"
+        modelo.innerHTML = "La Nut Pistache"
+        peso.innerHTML = "225g"
+        preco.innerHTML = "R$71,99"
+    }
+    gtd.onclick = function(){
+        header.style.backgroundImage = "url(./darkfundo.jpg)"
+        modelo.innerHTML = "Caixa Gourmet"
+        peso.innerHTML = "255g"
+        preco.innerHTML = "R$79,99"
+    }
+</script>
+</html>
